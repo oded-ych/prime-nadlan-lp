@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>בלינסון · מודעות</title>
+<meta name="description" content="סדרת מודעות דיגיטליות לפרויקט בלינסון של פריים נדל״ן — פיד, סטורי וטקסט לפרסום.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&family=Rubik:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B1E86;--navy2:#071459;--gold:#E69138;--gold2:#F4A94C;--ink:#10131A;
+  --bg:#F5F6FB;--card:#FFFFFF;--text:#1A2030;--mut:#5B6472;--line:#E6E8F2;--chip:#FBEAD5;--chipink:#9A5A12;
+}
+:root:not([data-theme="light"]){
+@media (prefers-color-scheme: dark){
+  :root{--bg:#0A0F1E;--card:#111831;--text:#EAEDF8;--mut:#9AA6C4;--line:#232C49;--chip:#2A2033;--chipink:#F4A94C;}
+}}
+:root[data-theme="dark"]{--bg:#0A0F1E;--card:#111831;--text:#EAEDF8;--mut:#9AA6C4;--line:#232C49;--chip:#2A2033;--chipink:#F4A94C;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--text);font-family:'Heebo',sans-serif;direction:rtl;line-height:1.6;}
+img{display:block;max-width:100%;}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px;}
+
+/* hero */
+.hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 100%);color:#fff;position:relative;overflow:hidden;}
+.hero::before{content:"";position:absolute;top:0;right:0;left:0;height:8px;background:linear-gradient(90deg,var(--gold),var(--gold2));}
+.hero-in{max-width:1120px;margin:0 auto;padding:46px 20px 56px;}
+.logochip{background:#fff;border-radius:14px;padding:12px 20px;display:inline-flex;box-shadow:0 12px 30px rgba(0,0,0,.28);margin-bottom:34px;}
+.logochip img{height:52px;}
+.kick{color:var(--gold2);font-weight:800;font-size:clamp(14px,2.6vw,17px);letter-spacing:.4px;margin-bottom:12px;}
+.hero h1{font-family:'Rubik';font-weight:900;font-size:clamp(34px,7vw,58px);line-height:1.04;letter-spacing:-1px;margin-bottom:16px;}
+.hero p{font-size:clamp(15px,2.4vw,19px);color:#D7DDF6;max-width:660px;margin-bottom:28px;}
+.stats{display:flex;flex-wrap:wrap;gap:12px;}
+.stat{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:12px 20px;}
+.stat b{display:block;font-family:'Rubik';font-weight:800;font-size:clamp(18px,3.2vw,24px);color:var(--gold2);}
+.stat span{font-size:13px;color:#C8D0F0;font-weight:600;}
+
+/* sections */
+section{padding:46px 0;}
+.shead{display:flex;align-items:baseline;gap:14px;margin-bottom:26px;flex-wrap:wrap;}
+.shead h2{font-family:'Rubik';font-weight:800;font-size:clamp(24px,4vw,34px);color:var(--navy);}
+:root[data-theme="dark"] .shead h2{color:#fff;}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .shead h2{color:#fff;}}
+.shead p{color:var(--mut);font-size:15px;font-weight:600;}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(11,30,134,.08);transition:transform .18s,box-shadow .18s;}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(11,30,134,.16);}
+.card .thumb{position:relative;cursor:zoom-in;}
+.card .thumb::after{content:"🔍 להגדלה";position:absolute;bottom:12px;left:12px;background:rgba(7,20,89,.82);color:#fff;
+  font-size:12px;font-weight:700;padding:6px 12px;border-radius:999px;opacity:0;transition:opacity .18s;}
+.card .thumb:hover::after{opacity:1;}
+.card .cap{padding:16px 18px;}
+.card .cap .tag{display:inline-block;background:var(--chip);color:var(--chipink);font-weight:800;font-size:11px;border-radius:999px;padding:4px 12px;margin-bottom:8px;}
+.card .cap h3{font-family:'Rubik';font-weight:800;font-size:18px;color:var(--navy);margin-bottom:4px;}
+:root[data-theme="dark"] .card .cap h3{color:#C9D4FF;}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .card .cap h3{color:#C9D4FF;}}
+.card .cap p{font-size:13.5px;color:var(--mut);}
+
+.stories .grid{grid-template-columns:repeat(4,1fr);gap:16px;}
+.stories .card .thumb img{aspect-ratio:9/16;object-fit:cover;width:100%;}
+
+/* copy */
+.copywrap{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:clamp(20px,4vw,36px);box-shadow:0 10px 30px rgba(11,30,134,.08);}
+.copyblock{margin-bottom:24px;}
+.copyblock:last-of-type{margin-bottom:0;}
+.copyblock .lbl{color:var(--gold);font-weight:800;font-size:13px;margin-bottom:8px;}
+.copyblock h3{font-family:'Rubik';font-weight:800;font-size:clamp(18px,3vw,22px);color:var(--navy);line-height:1.3;}
+:root[data-theme="dark"] .copyblock h3{color:#C9D4FF;}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .copyblock h3{color:#C9D4FF;}}
+.copyblock .txt{font-size:15.5px;line-height:1.75;white-space:pre-line;color:var(--text);}
+.copybtn{margin-top:22px;display:inline-flex;align-items:center;gap:8px;background:linear-gradient(180deg,var(--gold2),var(--gold));
+  color:var(--ink);font-family:'Rubik';font-weight:800;font-size:16px;border:none;border-radius:999px;padding:14px 28px;cursor:pointer;
+  box-shadow:0 10px 26px rgba(230,145,56,.4);transition:transform .12s;}
+.copybtn:active{transform:scale(.97);}
+.copybtn.done{background:#1E9E5A;color:#fff;box-shadow:0 10px 26px rgba(30,158,90,.4);}
+
+/* footer */
+footer{background:var(--navy2);color:#AEBCEC;text-align:center;padding:30px 16px;font-size:13px;}
+footer .bb{color:#fff;font-weight:800;font-family:'Rubik';font-size:16px;margin-bottom:6px;}
+footer .disc{margin-top:10px;opacity:.75;}
+
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(5,10,35,.92);display:none;align-items:center;justify-content:center;z-index:50;padding:24px;cursor:zoom-out;}
+.lb.on{display:flex;}
+.lb img{max-width:min(92vw,900px);max-height:90vh;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.6);}
+.lb .x{position:absolute;top:20px;left:24px;color:#fff;font-size:34px;font-weight:300;cursor:pointer;line-height:1;}
+
+@media(max-width:720px){
+  .grid{grid-template-columns:1fr;}
+  .stories .grid{grid-template-columns:repeat(2,1fr);}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-in">
+    <div class="logochip"><img src="img/logo.png" alt="פריים נדל״ן"></div>
+    <div class="kick">מודעות לקמפיין ממומן · פייסבוק ואינסטגרם</div>
+    <h1>פרויקט בלינסון<br>נווה חיים, חדרה</h1>
+    <p>פרויקט בוטיק של 3 קוטג׳ים — נותר קוטג׳ אחרון. סדרת מודעות דיגיטליות מוכנה להעלאה בפורמט פיד וסטורי, בהתאמה מלאה לשפה המותגית של פריים נדל״ן, לצד הטקסט לפרסום.</p>
+    <div class="stats">
+      <div class="stat"><b>קוטג׳ אחרון</b><span>נותר בפרויקט</span></div>
+      <div class="stat"><b>211 מ״ר</b><span>ב־3 מפלסים</span></div>
+      <div class="stat"><b>3,880,000 ₪</b><span>מחיר</span></div>
+      <div class="stat"><b>5</b><span>מודעות מוכנות</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="wrap">
+    <div class="shead"><h2>מודעות פיד</h2><p>1080×1080 · לפוסטים בפייסבוק ובאינסטגרם</p></div>
+    <div class="grid">
+      <div class="card"><div class="thumb" onclick="zoom('img/feed-night.jpg')"><img src="img/feed-night.jpg" alt="קוטג׳ אחרון"></div>
+        <div class="cap"><span class="tag">עוגן: דחיפות</span><h3>קוטג׳ אחרון</h3><p>הדמיית לילה · scarcity ומחיר</p></div></div>
+      <div class="card"><div class="thumb" onclick="zoom('img/feed-day.jpg')"><img src="img/feed-day.jpg" alt="בית למשפחה"></div>
+        <div class="cap"><span class="tag">עוגן: משפחה</span><h3>בית למשפחה</h3><p>חזית יום · יחידות הורים והטבת הרוכש</p></div></div>
+      <div class="card"><div class="thumb" onclick="zoom('img/feed-interior.jpg')"><img src="img/feed-interior.jpg" alt="הדמיה פנימית"></div>
+        <div class="cap"><span class="tag">עוגן: אווירה</span><h3>הדמיה פנימית</h3><p>סלון פתוח · פנייה רגשית ולייפסטייל</p></div></div>
+    </div>
+  </section>
+
+  <section class="wrap stories">
+    <div class="shead"><h2>גרסאות סטורי</h2><p>1080×1920 · מסך מלא בסטוריז וברילס</p></div>
+    <div class="grid">
+      <div class="card"><div class="thumb" onclick="zoom('img/story-night.jpg')"><img src="img/story-night.jpg" alt="סטורי קוטג׳ אחרון"></div><div class="cap"><h3>קוטג׳ אחרון</h3></div></div>
+      <div class="card"><div class="thumb" onclick="zoom('img/story-interior.jpg')"><img src="img/story-interior.jpg" alt="סטורי פנימי"></div><div class="cap"><h3>בית למשפחה</h3></div></div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="shead"><h2>טקסט לפרסום</h2><p>מוכן להעתקה ולהעלאה למודעה הממומנת</p></div>
+    <div class="copywrap">
+      <div class="copyblock">
+        <div class="lbl">כותרת</div>
+        <h3>נותר קוטג׳ אחרון בפרויקט בלינסון — נווה חיים, חדרה</h3>
+      </div>
+      <div class="copyblock">
+        <div class="lbl">גוף המודעה</div>
+        <div class="txt" id="adbody">🏡 פרויקט בוטיק של 3 קוטג׳ים בלבד — וכעת נותרה ההזדמנות האחרונה להצטרף.
+
+קוטג׳ מרווח בן כ־211 מ״ר על שלושה מפלסים, מתוכנן בדיוק למשפחה שרוצה יותר מרחב, פרטיות ואיכות חיים.
+
+✨ כ־211 מ״ר בנוי ב־3 מפלסים
+✨ גינה פרטית ו־2 חניות צמודות
+✨ מרפסות בשטח כולל של כ־57 מ״ר
+✨ יחידת הורים מפנקת במפלס הכניסה
+✨ יחידת הורים נוספת ו־2 חדרי שינה במפלס הראשון
+✨ יחידת מתבגר פרטית בקומה העליונה
+✨ כ־5 דקות מתחנת הרכבת ומחוף הים
+✨ גישה מהירה לכבישים 2 ו־4
+
+💰 מחיר: 3,880,000 ₪
+
+💎 הטבות מיוחדות לרוכש הקוטג׳ האחרון:
+• שדרוג לרמת פרימיום ללא עלות
+• רק 10% במעמד החוזה
+• יתרת התשלום בפריסה נוחה
+
+📩 נותר קוטג׳ אחד בלבד — השאירו פרטים לקבלת תוכניות, מפרט מלא ותיאום פגישה.</div>
+      </div>
+      <button class="copybtn" id="cbtn" onclick="copyTxt()"><span>📋</span><span id="cbtnt">העתק את הטקסט</span></button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="bb">פריים נדל״ן · נדל״ן בגובה העיניים</div>
+  <div>פרויקט בלינסון · נווה חיים, חדרה</div>
+  <div class="disc">כל ההדמיות להמחשה בלבד | ט.ל.ח</div>
+</footer>
+
+<div class="lb" id="lb" onclick="closeLb(event)"><span class="x" onclick="closeLb(event)">✕</span><img id="lbimg" src="" alt=""></div>
+
+<script>
+function zoom(src){var lb=document.getElementById('lb');document.getElementById('lbimg').src=src;lb.classList.add('on');}
+function closeLb(e){document.getElementById('lb').classList.remove('on');}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')document.getElementById('lb').classList.remove('on');});
+function copyTxt(){
+  var title='נותר קוטג׳ אחרון בפרויקט בלינסון — נווה חיים, חדרה\n\n';
+  var body=document.getElementById('adbody').innerText;
+  var btn=document.getElementById('cbtn'),t=document.getElementById('cbtnt');
+  function ok(){btn.classList.add('done');t.textContent='הטקסט הועתק ✓';setTimeout(function(){btn.classList.remove('done');t.textContent='העתק את הטקסט';},2200);}
+  try{
+    navigator.clipboard.writeText(title+body).then(ok,function(){fallback(title+body,ok);});
+  }catch(err){fallback(title+body,ok);}
+}
+function fallback(text,ok){
+  try{var ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);ok();}catch(e){}
+}
+</script>
+</body>
+</html>
