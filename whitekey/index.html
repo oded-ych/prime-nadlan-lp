@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>White Key אילת · מודעות | פריים נדל״ן</title>
+<meta name="description" content="סדרת מודעות דיגיטליות לפרויקט White Key אילת (אלביט מגורים) בשיווק פריים נדל״ן — פיד, סטורי וטקסט לקמפיין ממומן.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&family=Rubik:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B1E86;--navy2:#071459;--gold:#E69138;--gold2:#F4A94C;--ink:#10131A;
+  --bg:#F5F6FB;--card:#FFFFFF;--text:#1A2030;--mut:#5B6472;--line:#E6E8F2;--chip:#FBEAD5;--chipink:#9A5A12;
+}
+:root:not([data-theme="light"]){
+@media (prefers-color-scheme: dark){
+  :root{--bg:#0A0F1E;--card:#111831;--text:#EAEDF8;--mut:#9AA6C4;--line:#232C49;--chip:#2A2033;--chipink:#F4A94C;}
+}}
+:root[data-theme="dark"]{--bg:#0A0F1E;--card:#111831;--text:#EAEDF8;--mut:#9AA6C4;--line:#232C49;--chip:#2A2033;--chipink:#F4A94C;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--text);font-family:'Heebo',sans-serif;direction:rtl;line-height:1.6;}
+img{display:block;max-width:100%;}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px;}
+
+/* hero */
+.hero{position:relative;overflow:hidden;color:#fff;background:var(--navy2);}
+.hero::before{content:"";position:absolute;top:0;right:0;left:0;height:8px;background:linear-gradient(90deg,var(--gold),var(--gold2));z-index:3;}
+.hero-bg{position:absolute;inset:0;background:url('img/hero.jpg') center 60%/cover no-repeat;}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(150deg,rgba(7,20,89,.86) 0%,rgba(11,30,134,.78) 45%,rgba(5,14,60,.92) 100%);}
+.hero-in{position:relative;z-index:2;max-width:1120px;margin:0 auto;padding:44px 20px 52px;}
+.toprow{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:30px;flex-wrap:wrap;}
+.logochip{background:#fff;border-radius:14px;padding:12px 20px;display:inline-flex;box-shadow:0 12px 30px rgba(0,0,0,.3);}
+.logochip img{height:50px;}
+.devtag{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:9px 18px;font-weight:700;font-size:15px;align-self:center;}
+.devtag b{color:var(--gold2);}
+.kick{color:var(--gold2);font-weight:800;font-size:clamp(14px,2.6vw,17px);letter-spacing:.4px;margin-bottom:12px;}
+.hero h1{font-family:'Rubik';font-weight:900;font-size:clamp(34px,7vw,60px);line-height:1.03;letter-spacing:-1px;margin-bottom:16px;}
+.hero h1 span{color:var(--gold2);}
+.hero p{font-size:clamp(15px,2.4vw,19px);color:#D7DDF6;max-width:680px;margin-bottom:28px;}
+.stats{display:flex;flex-wrap:wrap;gap:12px;}
+.stat{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:12px 20px;}
+.stat b{display:block;font-family:'Rubik';font-weight:800;font-size:clamp(18px,3.2vw,24px);color:var(--gold2);}
+.stat span{font-size:13px;color:#C8D0F0;font-weight:600;}
+
+/* sections */
+section{padding:46px 0;}
+.shead{display:flex;align-items:baseline;gap:14px;margin-bottom:26px;flex-wrap:wrap;}
+.shead h2{font-family:'Rubik';font-weight:800;font-size:clamp(24px,4vw,34px);color:var(--navy);}
+:root[data-theme="dark"] .shead h2{color:#fff;}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .shead h2{color:#fff;}}
+.shead p{color:var(--mut);font-size:15px;font-weight:600;}
+
+/* value row */
+.values{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.val{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 18px;text-align:center;box-shadow:0 10px 30px rgba(11,30,134,.07);}
+.val .n{font-family:'Rubik';font-weight:900;font-size:clamp(20px,3.4vw,27px);color:var(--gold);line-height:1;}
+.val .t{font-weight:800;margin-top:8px;color:var(--navy);}
+:root[data-theme="dark"] .val .t{color:#C9D4FF;}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .val .t{color:#C9D4FF;}}
+.val .d{font-size:13px;color:var(--mut);margin-top:2px;}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(11,30,134,.08);transition:transform .18s,box-shadow .18s;}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(11,30,134,.16);}
+.card .thumb{position:relative;cursor:zoom-in;}
+.card .thumb::after{content:"🔍 להגדלה";position:absolute;bottom:12px;left:12px;background:rgba(7,20,89,.82);color:#fff;
+  font-size:12px;font-weight:700;padding:6px 12px;border-radius:999px;opacity:0;transition:opacity .18s;}
+.card .thumb:hover::after{opacity:1;}
+.card .cap{padding:16px 18px;}
+.card .cap .tag{display:inline-block;background:var(--chip);color:var(--chipink);font-weight:800;font-size:11px;border-radius:999px;padding:4px 12px;margin-bottom:8px;}
+.card .cap h3{font-family:'Rubik';font-weight:800;font-size:18px;color:var(--navy);margin-bottom:4px;}
+:root[data-theme="dark"] .card .cap h3{color:#C9D4FF;}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .card .cap h3{color:#C9D4FF;}}
+.card .cap p{font-size:13.5px;color:var(--mut);}
+.stories .grid{grid-template-columns:repeat(3,1fr);gap:18px;max-width:760px;}
+.stories .card .thumb img{aspect-ratio:9/16;object-fit:cover;width:100%;}
+
+/* copy */
+.copywrap{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:clamp(20px,4vw,36px);box-shadow:0 10px 30px rgba(11,30,134,.08);}
+.copyblock{margin-bottom:24px;}
+.copyblock:last-of-type{margin-bottom:0;}
+.copyblock .lbl{color:var(--gold);font-weight:800;font-size:13px;margin-bottom:8px;}
+.copyblock h3{font-family:'Rubik';font-weight:800;font-size:clamp(18px,3vw,22px);color:var(--navy);line-height:1.3;}
+:root[data-theme="dark"] .copyblock h3{color:#C9D4FF;}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .copyblock h3{color:#C9D4FF;}}
+.copyblock .txt{font-size:15.5px;line-height:1.75;white-space:pre-line;color:var(--text);}
+.copybtn{margin-top:22px;display:inline-flex;align-items:center;gap:8px;background:linear-gradient(180deg,var(--gold2),var(--gold));
+  color:var(--ink);font-family:'Rubik';font-weight:800;font-size:16px;border:none;border-radius:999px;padding:14px 28px;cursor:pointer;
+  box-shadow:0 10px 26px rgba(230,145,56,.4);transition:transform .12s;}
+.copybtn:active{transform:scale(.97);}
+.copybtn.done{background:#1E9E5A;color:#fff;box-shadow:0 10px 26px rgba(30,158,90,.4);}
+
+/* footer */
+footer{background:var(--navy2);color:#AEBCEC;text-align:center;padding:30px 16px;font-size:13px;}
+footer .bb{color:#fff;font-weight:800;font-family:'Rubik';font-size:16px;margin-bottom:6px;}
+footer .disc{margin-top:10px;opacity:.75;}
+
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(5,10,35,.92);display:none;align-items:center;justify-content:center;z-index:50;padding:24px;cursor:zoom-out;}
+.lb.on{display:flex;}
+.lb img{max-width:min(92vw,900px);max-height:90vh;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.6);}
+.lb .x{position:absolute;top:20px;left:24px;color:#fff;font-size:34px;font-weight:300;cursor:pointer;line-height:1;}
+
+@media(max-width:720px){
+  .grid{grid-template-columns:1fr;}
+  .values{grid-template-columns:repeat(2,1fr);}
+  .stories .grid{grid-template-columns:repeat(2,1fr);}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-in">
+    <div class="toprow">
+      <div class="logochip"><img src="img/logo.png" alt="פריים נדל״ן"></div>
+      <div class="devtag">בשיווק <b>פריים נדל״ן</b> · אלביט מגורים</div>
+    </div>
+    <div class="kick">מודעות לקמפיין ממומן · פייסבוק ואינסטגרם</div>
+    <h1>White Key <span>אילת</span><br>סדרת מודעות לאישור</h1>
+    <p>פרויקט יוקרה של אלביט מגורים בלב רובע הטרמינל המתחדש — 10 דק׳ מהים. שלושה קונספטים של מודעה, כל אחד בפורמט פיד וסטורי, בהתאמה מלאה לשפה המותגית של פריים נדל״ן ולצד הטקסט לפרסום.</p>
+    <div class="stats">
+      <div class="stat"><b>3 חד׳ מ־1,795,000 ₪</b><span>מחיר פתיחה</span></div>
+      <div class="stat"><b>15,000 ₪</b><span>הכנסה חודשית ממוצעת</span></div>
+      <div class="stat"><b>179,500 ₪</b><span>בחוזה · מודל 10/90</span></div>
+      <div class="stat"><b>3 קונספטים</b><span>פיד + סטורי</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="wrap">
+    <div class="shead"><h2>היתרונות המרכזיים</h2><p>העוגנים השיווקיים של הקמפיין</p></div>
+    <div class="values">
+      <div class="val"><div class="n">10/90</div><div class="t">179,500 ₪ בחוזה</div><div class="d">היתרה לקראת אכלוס</div></div>
+      <div class="val"><div class="n">15,000 ₪</div><div class="t">הכנסה חודשית</div><div class="d">דרך חברת ניהול</div></div>
+      <div class="val"><div class="n">פטור מדד</div><div class="t">ללא הצמדה</div><div class="d">ודאות בתשלום</div></div>
+      <div class="val"><div class="n">10 דק׳</div><div class="t">מהים והטיילת</div><div class="d">רובע הטרמינל</div></div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="shead"><h2>מודעות פיד</h2><p>1080×1080 · לפוסטים בפייסבוק ובאינסטגרם</p></div>
+    <div class="grid">
+      <div class="card"><div class="thumb" onclick="zoom('img/feed-income.jpg')"><img src="img/feed-income.jpg" alt="קונספט הכנסה"></div>
+        <div class="cap"><span class="tag">עוגן: הכנסה</span><h3>דירה שמייצרת הכנסה</h3><p>15,000 ₪ בחודש · קהל משקיעים</p></div></div>
+      <div class="card"><div class="thumb" onclick="zoom('img/feed-entry.jpg')"><img src="img/feed-entry.jpg" alt="קונספט כניסה נמוכה"></div>
+        <div class="cap"><span class="tag">עוגן: כניסה נמוכה</span><h3>179,500 ₪ בלבד</h3><p>מודל 10/90 · ההוק הכי חזק</p></div></div>
+      <div class="card"><div class="thumb" onclick="zoom('img/feed-lifestyle.jpg')"><img src="img/feed-lifestyle.jpg" alt="קונספט אורח חיים"></div>
+        <div class="cap"><span class="tag">עוגן: אורח חיים</span><h3>החיים החדשים באילת</h3><p>נוף ויוקרה · פנייה רגשית</p></div></div>
+    </div>
+  </section>
+
+  <section class="wrap stories">
+    <div class="shead"><h2>גרסאות סטורי</h2><p>1080×1920 · מסך מלא בסטוריז וברילס</p></div>
+    <div class="grid">
+      <div class="card"><div class="thumb" onclick="zoom('img/story-income.jpg')"><img src="img/story-income.jpg" alt="סטורי הכנסה"></div><div class="cap"><h3>הכנסה</h3></div></div>
+      <div class="card"><div class="thumb" onclick="zoom('img/story-entry.jpg')"><img src="img/story-entry.jpg" alt="סטורי כניסה נמוכה"></div><div class="cap"><h3>כניסה נמוכה</h3></div></div>
+      <div class="card"><div class="thumb" onclick="zoom('img/story-lifestyle.jpg')"><img src="img/story-lifestyle.jpg" alt="סטורי אורח חיים"></div><div class="cap"><h3>אורח חיים</h3></div></div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="shead"><h2>טקסט לפרסום</h2><p>מוכן להעתקה ולהעלאה למודעה הממומנת</p></div>
+    <div class="copywrap">
+      <div class="copyblock">
+        <div class="lbl">כותרת</div>
+        <h3>White Key אילת — דירת 3 חדרים שמייצרת לכם הכנסה של כ־15,000 ₪ בחודש</h3>
+      </div>
+      <div class="copyblock">
+        <div class="lbl">גוף המודעה</div>
+        <div class="txt" id="adbody">🔑 White Key — פרויקט היוקרה החדש של אלביט מגורים בלב רובע הטרמינל המתחדש באילת, במרחק 10 דקות מהים, מהטיילת ומאזור המלונות.
+
+דירה שמשלבת איכות חיים עם הכנסה:
+🏙️ דירות 3 חדרים החל מ־1,795,000 ₪
+💰 הכנסה חודשית ממוצעת של כ־15,000 ₪ דרך חברת ניהול מלאה
+🤝 מודל 10/90 — רק 179,500 ₪ בחתימת החוזה, היתרה לקראת האכלוס
+📊 פטור ממדד — ודאות מלאה בתשלום
+🏗️ 31 בנייני בוטיק · כניסה פרטית ומעלית · עד 11 דירות בבניין
+🌿 תכנון ים-תיכוני לבן · חצרות ירוקות · דירות עם בריכה פרטית
+
+העיר שלא מפסיקה לצמוח, במיקום שלא יחזור על עצמו.
+
+📩 השאירו פרטים לקבלת מצגת הפרויקט, תמהיל הדירות ותיאום שיחה אישית.</div>
+      </div>
+      <button class="copybtn" id="cbtn" onclick="copyTxt()"><span>📋</span><span id="cbtnt">העתק את הטקסט</span></button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="bb">פריים נדל״ן · נדל״ן בגובה העיניים</div>
+  <div>White Key אילת · אלביט מגורים · רובע הטרמינל</div>
+  <div class="disc">ההדמיה להמחשה בלבד | ט.ל.ח</div>
+</footer>
+
+<div class="lb" id="lb" onclick="closeLb(event)"><span class="x" onclick="closeLb(event)">✕</span><img id="lbimg" src="" alt=""></div>
+
+<script>
+function zoom(src){var lb=document.getElementById('lb');document.getElementById('lbimg').src=src;lb.classList.add('on');}
+function closeLb(e){document.getElementById('lb').classList.remove('on');}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')document.getElementById('lb').classList.remove('on');});
+function copyTxt(){
+  var title='White Key אילת — דירת 3 חדרים שמייצרת לכם הכנסה של כ־15,000 ₪ בחודש\n\n';
+  var body=document.getElementById('adbody').innerText;
+  var btn=document.getElementById('cbtn'),t=document.getElementById('cbtnt');
+  function ok(){btn.classList.add('done');t.textContent='הטקסט הועתק ✓';setTimeout(function(){btn.classList.remove('done');t.textContent='העתק את הטקסט';},2200);}
+  try{navigator.clipboard.writeText(title+body).then(ok,function(){fallback(title+body,ok);});}
+  catch(err){fallback(title+body,ok);}
+}
+function fallback(text,ok){
+  try{var ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);ok();}catch(e){}
+}
+</script>
+</body>
+</html>
