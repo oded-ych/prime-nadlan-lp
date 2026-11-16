@@ -3,214 +3,238 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>White Key אילת · מודעות | פריים נדל״ן</title>
-<meta name="description" content="סדרת מודעות דיגיטליות לפרויקט White Key אילת (אלביט מגורים) בשיווק פריים נדל״ן — פיד, סטורי וטקסט לקמפיין ממומן.">
+<title>White Key אילת · אלביט מגורים | בשיווק פריים נדל״ן</title>
+<meta name="description" content="White Key אילת — פרויקט יוקרה של אלביט מגורים בלב רובע הטרמינל המתחדש. דירות 3 חדרים החל מ־1,795,000 ₪, הכנסה חודשית ממוצעת 15,000 ₪, מודל 10/90. השאירו פרטים.">
+<meta property="og:title" content="White Key אילת · אלביט מגורים">
+<meta property="og:description" content="דירה באילת שעובדת בשבילכם — הכנסה חודשית ממוצעת 15,000 ₪, כניסה של 179,500 ₪ בלבד.">
+<meta property="og:image" content="img/hero.jpg">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&family=Rubik:wght@500;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --navy:#0B1E86;--navy2:#071459;--gold:#E69138;--gold2:#F4A94C;--ink:#10131A;
-  --bg:#F5F6FB;--card:#FFFFFF;--text:#1A2030;--mut:#5B6472;--line:#E6E8F2;--chip:#FBEAD5;--chipink:#9A5A12;
+  --navy:#0B1E86;--navy2:#071459;--deep:#040A30;--gold:#E69138;--gold2:#F4A94C;--ink:#10131A;
+  --bg:#F5F6FB;--card:#FFFFFF;--text:#1A2030;--mut:#5B6472;--line:#E6E8F2;
 }
-:root:not([data-theme="light"]){
-@media (prefers-color-scheme: dark){
-  :root{--bg:#0A0F1E;--card:#111831;--text:#EAEDF8;--mut:#9AA6C4;--line:#232C49;--chip:#2A2033;--chipink:#F4A94C;}
-}}
-:root[data-theme="dark"]{--bg:#0A0F1E;--card:#111831;--text:#EAEDF8;--mut:#9AA6C4;--line:#232C49;--chip:#2A2033;--chipink:#F4A94C;}
 *{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
 body{background:var(--bg);color:var(--text);font-family:'Heebo',sans-serif;direction:rtl;line-height:1.6;}
 img{display:block;max-width:100%;}
-.wrap{max-width:1120px;margin:0 auto;padding:0 16px;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:1140px;margin:0 auto;padding:0 18px;}
+.metal{background:linear-gradient(180deg,#FFF1CF 0%,#FFD38A 28%,#F4A94C 54%,#D97E25 76%,#F7B963 100%);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.money{display:inline-flex;direction:ltr;align-items:baseline;gap:.06em;white-space:nowrap;}
+.money .c{font-size:.6em;font-weight:800;}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:40;background:rgba(4,10,48,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(244,169,76,.25);}
+.nav .in{max-width:1140px;margin:0 auto;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:14px;}
+.nav .brand{display:flex;align-items:center;gap:12px;}
+.nav .chip{background:#fff;border-radius:11px;padding:7px 12px;display:flex;}
+.nav .chip img{height:30px;}
+.nav .wk{color:#fff;font-weight:300;letter-spacing:.28em;font-size:17px;direction:ltr;}
+.nav .wk b{display:block;font-size:11px;letter-spacing:.2em;color:var(--gold2);font-weight:700;}
+.nav .btn{background:linear-gradient(180deg,var(--gold2),var(--gold));color:#140d02;font-weight:800;border-radius:999px;padding:11px 22px;font-size:15px;box-shadow:0 8px 20px rgba(230,145,56,.35);}
+@media(max-width:560px){.nav .wk{display:none;}}
 
 /* hero */
-.hero{position:relative;overflow:hidden;color:#fff;background:var(--navy2);}
-.hero::before{content:"";position:absolute;top:0;right:0;left:0;height:8px;background:linear-gradient(90deg,var(--gold),var(--gold2));z-index:3;}
-.hero-bg{position:absolute;inset:0;background:url('img/hero.jpg') center 60%/cover no-repeat;}
-.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(150deg,rgba(7,20,89,.86) 0%,rgba(11,30,134,.78) 45%,rgba(5,14,60,.92) 100%);}
-.hero-in{position:relative;z-index:2;max-width:1120px;margin:0 auto;padding:44px 20px 52px;}
-.toprow{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:30px;flex-wrap:wrap;}
-.logochip{background:#fff;border-radius:14px;padding:12px 20px;display:inline-flex;box-shadow:0 12px 30px rgba(0,0,0,.3);}
-.logochip img{height:50px;}
-.devtag{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:9px 18px;font-weight:700;font-size:15px;align-self:center;}
-.devtag b{color:var(--gold2);}
-.kick{color:var(--gold2);font-weight:800;font-size:clamp(14px,2.6vw,17px);letter-spacing:.4px;margin-bottom:12px;}
-.hero h1{font-family:'Rubik';font-weight:900;font-size:clamp(34px,7vw,60px);line-height:1.03;letter-spacing:-1px;margin-bottom:16px;}
+.hero{position:relative;color:#fff;overflow:hidden;background:var(--deep);}
+.hero .bg{position:absolute;inset:0;background:url('img/hero.jpg') 20% 60%/cover no-repeat;}
+.hero .bg::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(180deg,rgba(4,10,48,.5) 0%,rgba(4,10,48,0) 24%,rgba(4,10,48,.5) 62%,rgba(4,10,48,.96) 100%),
+  linear-gradient(270deg,rgba(4,10,48,.85) 0%,rgba(4,10,48,.2) 55%,rgba(4,10,48,0) 100%);}
+.hero .in{position:relative;z-index:2;max-width:1140px;margin:0 auto;padding:clamp(56px,11vw,120px) 18px clamp(40px,7vw,70px);display:flex;flex-direction:column;align-items:flex-start;}
+.hero .kick{display:inline-flex;align-items:center;gap:10px;color:var(--gold2);font-weight:800;letter-spacing:.08em;font-size:clamp(14px,2.4vw,18px);margin-bottom:18px;}
+.hero .kick::before{content:"";width:34px;height:2px;background:linear-gradient(90deg,transparent,var(--gold2));}
+.hero h1{font-family:'Rubik';font-weight:900;font-size:clamp(38px,7.4vw,72px);line-height:1.02;letter-spacing:-1px;text-shadow:0 6px 30px rgba(0,0,0,.5);margin-bottom:18px;max-width:14ch;}
 .hero h1 span{color:var(--gold2);}
-.hero p{font-size:clamp(15px,2.4vw,19px);color:#D7DDF6;max-width:680px;margin-bottom:28px;}
-.stats{display:flex;flex-wrap:wrap;gap:12px;}
-.stat{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:12px 20px;}
-.stat b{display:block;font-family:'Rubik';font-weight:800;font-size:clamp(18px,3.2vw,24px);color:var(--gold2);}
-.stat span{font-size:13px;color:#C8D0F0;font-weight:600;}
+.hero .lead{font-size:clamp(16px,2.4vw,21px);color:#D7DDF6;max-width:620px;margin-bottom:30px;}
+.hero .hooks{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px;}
+.hook{background:rgba(9,22,98,.5);border:1px solid rgba(244,169,76,.45);border-radius:16px;padding:14px 22px;backdrop-filter:blur(6px);}
+.hook b{display:block;font-family:'Rubik';font-weight:900;font-size:clamp(22px,3.6vw,30px);}
+.hook span{font-size:14px;color:#C8D0F0;font-weight:600;}
+.cta-lg{display:inline-flex;align-items:center;gap:12px;background:linear-gradient(180deg,#FFD08A,var(--gold2) 40%,var(--gold));color:#140d02;font-family:'Rubik';font-weight:800;font-size:clamp(18px,2.6vw,22px);border-radius:999px;padding:18px 40px;box-shadow:0 14px 34px rgba(230,145,56,.45),inset 0 2px 0 rgba(255,255,255,.5);transition:transform .12s;}
+.cta-lg:active{transform:scale(.98);}
 
-/* sections */
-section{padding:46px 0;}
-.shead{display:flex;align-items:baseline;gap:14px;margin-bottom:26px;flex-wrap:wrap;}
-.shead h2{font-family:'Rubik';font-weight:800;font-size:clamp(24px,4vw,34px);color:var(--navy);}
-:root[data-theme="dark"] .shead h2{color:#fff;}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .shead h2{color:#fff;}}
-.shead p{color:var(--mut);font-size:15px;font-weight:600;}
-
-/* value row */
-.values{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
-.val{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 18px;text-align:center;box-shadow:0 10px 30px rgba(11,30,134,.07);}
-.val .n{font-family:'Rubik';font-weight:900;font-size:clamp(20px,3.4vw,27px);color:var(--gold);line-height:1;}
+/* values */
+.values{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:-44px;position:relative;z-index:5;}
+.val{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px 18px;text-align:center;box-shadow:0 16px 40px rgba(11,30,134,.12);}
+.val .n{font-family:'Rubik';font-weight:900;font-size:clamp(22px,3.6vw,30px);color:var(--gold);line-height:1;}
 .val .t{font-weight:800;margin-top:8px;color:var(--navy);}
-:root[data-theme="dark"] .val .t{color:#C9D4FF;}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .val .t{color:#C9D4FF;}}
-.val .d{font-size:13px;color:var(--mut);margin-top:2px;}
+.val .d{font-size:13.5px;color:var(--mut);margin-top:2px;}
+@media(max-width:760px){.values{grid-template-columns:repeat(2,1fr);margin-top:-30px;}}
 
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(11,30,134,.08);transition:transform .18s,box-shadow .18s;}
-.card:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(11,30,134,.16);}
-.card .thumb{position:relative;cursor:zoom-in;}
-.card .thumb::after{content:"🔍 להגדלה";position:absolute;bottom:12px;left:12px;background:rgba(7,20,89,.82);color:#fff;
-  font-size:12px;font-weight:700;padding:6px 12px;border-radius:999px;opacity:0;transition:opacity .18s;}
-.card .thumb:hover::after{opacity:1;}
-.card .cap{padding:16px 18px;}
-.card .cap .tag{display:inline-block;background:var(--chip);color:var(--chipink);font-weight:800;font-size:11px;border-radius:999px;padding:4px 12px;margin-bottom:8px;}
-.card .cap h3{font-family:'Rubik';font-weight:800;font-size:18px;color:var(--navy);margin-bottom:4px;}
-:root[data-theme="dark"] .card .cap h3{color:#C9D4FF;}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .card .cap h3{color:#C9D4FF;}}
-.card .cap p{font-size:13.5px;color:var(--mut);}
-.stories .grid{grid-template-columns:repeat(3,1fr);gap:18px;max-width:760px;}
-.stories .card .thumb img{aspect-ratio:9/16;object-fit:cover;width:100%;}
+/* section */
+section{padding:clamp(48px,7vw,78px) 0;}
+.lightbg{background:var(--bg);position:relative;z-index:2;}
+.eyebrow{color:var(--gold);font-weight:800;letter-spacing:.05em;font-size:14px;margin-bottom:10px;}
+h2{font-family:'Rubik';font-weight:800;font-size:clamp(28px,4.6vw,42px);color:var(--navy);line-height:1.1;letter-spacing:-.5px;}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;}
+.about .txt p{font-size:16.5px;color:var(--text);margin-top:16px;}
+.about ul{list-style:none;margin-top:22px;display:grid;gap:12px;}
+.about li{display:flex;gap:12px;align-items:flex-start;font-weight:600;}
+.about li .ck{flex:none;width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,var(--gold2),var(--gold));display:flex;align-items:center;justify-content:center;margin-top:2px;}
+.about li .ck svg{width:15px;height:15px;}
+.about .pic img{border-radius:20px;box-shadow:0 20px 50px rgba(11,30,134,.2);width:100%;aspect-ratio:4/3;object-fit:cover;}
+@media(max-width:820px){.about{grid-template-columns:1fr;gap:26px;}}
 
-/* copy */
-.copywrap{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:clamp(20px,4vw,36px);box-shadow:0 10px 30px rgba(11,30,134,.08);}
-.copyblock{margin-bottom:24px;}
-.copyblock:last-of-type{margin-bottom:0;}
-.copyblock .lbl{color:var(--gold);font-weight:800;font-size:13px;margin-bottom:8px;}
-.copyblock h3{font-family:'Rubik';font-weight:800;font-size:clamp(18px,3vw,22px);color:var(--navy);line-height:1.3;}
-:root[data-theme="dark"] .copyblock h3{color:#C9D4FF;}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .copyblock h3{color:#C9D4FF;}}
-.copyblock .txt{font-size:15.5px;line-height:1.75;white-space:pre-line;color:var(--text);}
-.copybtn{margin-top:22px;display:inline-flex;align-items:center;gap:8px;background:linear-gradient(180deg,var(--gold2),var(--gold));
-  color:var(--ink);font-family:'Rubik';font-weight:800;font-size:16px;border:none;border-radius:999px;padding:14px 28px;cursor:pointer;
-  box-shadow:0 10px 26px rgba(230,145,56,.4);transition:transform .12s;}
-.copybtn:active{transform:scale(.97);}
-.copybtn.done{background:#1E9E5A;color:#fff;box-shadow:0 10px 26px rgba(30,158,90,.4);}
+/* gallery */
+.gallery{background:#0A1230;}
+.gallery h2,.gallery .eyebrow{color:#fff;}
+.gallery .eyebrow{color:var(--gold2);}
+.ggrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px;}
+.ggrid .g{border-radius:16px;overflow:hidden;cursor:zoom-in;position:relative;aspect-ratio:3/2;}
+.ggrid .g img{width:100%;height:100%;object-fit:cover;transition:transform .4s;}
+.ggrid .g:hover img{transform:scale(1.06);}
+.ggrid .g.tall{grid-row:span 2;aspect-ratio:3/4;}
+@media(max-width:760px){.ggrid{grid-template-columns:repeat(2,1fr);}.ggrid .g.tall{grid-row:auto;aspect-ratio:3/2;}}
+
+/* lead form */
+.lead-sec{background:linear-gradient(160deg,var(--navy),var(--deep));color:#fff;}
+.lead-wrap{display:grid;grid-template-columns:1fr .9fr;gap:44px;align-items:center;}
+.lead-wrap h2{color:#fff;}
+.lead-wrap .p{color:#C8D0F0;font-size:17px;margin-top:14px;max-width:46ch;}
+.lead-wrap .mini{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;}
+.lead-wrap .mini span{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:8px 16px;font-size:14px;font-weight:600;}
+.form{background:#fff;border-radius:22px;padding:30px;box-shadow:0 24px 60px rgba(0,0,0,.4);color:var(--text);}
+.form h3{font-family:'Rubik';font-weight:800;font-size:22px;color:var(--navy);margin-bottom:4px;}
+.form .sub{color:var(--mut);font-size:14px;margin-bottom:18px;}
+.form label{display:block;font-weight:700;font-size:14px;margin:14px 0 6px;}
+.form input{width:100%;border:1.5px solid var(--line);border-radius:12px;padding:13px 16px;font-family:inherit;font-size:16px;background:#FAFBFF;}
+.form input:focus{outline:none;border-color:var(--gold);background:#fff;}
+.form .consent{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:13px;color:var(--mut);}
+.form .consent input{width:auto;margin-top:3px;}
+.form button{width:100%;margin-top:20px;background:linear-gradient(180deg,var(--gold2),var(--gold));color:#140d02;font-family:'Rubik';font-weight:800;font-size:18px;border:none;border-radius:999px;padding:16px;cursor:pointer;box-shadow:0 12px 28px rgba(230,145,56,.4);transition:transform .12s;}
+.form button:active{transform:scale(.98);}
+.form .ok{display:none;text-align:center;padding:30px 10px;}
+.form .ok.on{display:block;}
+.form .ok .big{font-family:'Rubik';font-weight:900;font-size:26px;color:var(--navy);}
+.form.sent .fields{display:none;}
+@media(max-width:820px){.lead-wrap{grid-template-columns:1fr;gap:28px;}}
 
 /* footer */
-footer{background:var(--navy2);color:#AEBCEC;text-align:center;padding:30px 16px;font-size:13px;}
-footer .bb{color:#fff;font-weight:800;font-family:'Rubik';font-size:16px;margin-bottom:6px;}
-footer .disc{margin-top:10px;opacity:.75;}
+footer{background:var(--deep);color:#AEBCEC;text-align:center;padding:34px 18px;font-size:13.5px;}
+footer .bb{color:#fff;font-weight:800;font-family:'Rubik';font-size:17px;margin-bottom:6px;}
+footer .row{margin-top:6px;}
+footer .disc{margin-top:14px;opacity:.72;font-size:12.5px;}
 
 /* lightbox */
-.lb{position:fixed;inset:0;background:rgba(5,10,35,.92);display:none;align-items:center;justify-content:center;z-index:50;padding:24px;cursor:zoom-out;}
+.lb{position:fixed;inset:0;background:rgba(4,8,30,.94);display:none;align-items:center;justify-content:center;z-index:60;padding:24px;cursor:zoom-out;}
 .lb.on{display:flex;}
-.lb img{max-width:min(92vw,900px);max-height:90vh;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.6);}
-.lb .x{position:absolute;top:20px;left:24px;color:#fff;font-size:34px;font-weight:300;cursor:pointer;line-height:1;}
-
-@media(max-width:720px){
-  .grid{grid-template-columns:1fr;}
-  .values{grid-template-columns:repeat(2,1fr);}
-  .stories .grid{grid-template-columns:repeat(2,1fr);}
-}
+.lb img{max-width:min(94vw,1100px);max-height:90vh;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.6);}
+.lb .x{position:absolute;top:18px;left:22px;color:#fff;font-size:36px;cursor:pointer;line-height:1;}
 </style>
 </head>
 <body>
 
+<nav class="nav"><div class="in">
+  <div class="brand">
+    <div class="chip"><img src="img/logo.png" alt="פריים נדל״ן"></div>
+    <div class="wk">WHITE KEY<b>אילת · אלביט מגורים</b></div>
+  </div>
+  <a class="btn" href="#form">להשארת פרטים ‹</a>
+</div></div>
+
 <header class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-in">
-    <div class="toprow">
-      <div class="logochip"><img src="img/logo.png" alt="פריים נדל״ן"></div>
-      <div class="devtag">בשיווק <b>פריים נדל״ן</b> · אלביט מגורים</div>
+  <div class="bg"></div>
+  <div class="in">
+    <div class="kick">אלביט מגורים · בשיווק פריים נדל״ן</div>
+    <h1>המפתח לחיים החדשים <span>באילת</span></h1>
+    <p class="lead">White Key — פרויקט יוקרה חדש בלב רובע הטרמינל המתחדש, 10 דקות מהים, מהטיילת וממרכזי הקניות. דירה שמשלבת איכות חיים עם הכנסה.</p>
+    <div class="hooks">
+      <div class="hook"><b class="metal money"><span class="c">₪</span>15,000</b><span>הכנסה חודשית ממוצעת</span></div>
+      <div class="hook"><b class="metal money"><span class="c">₪</span>179,500</b><span>בחוזה בלבד · מודל 10/90</span></div>
+      <div class="hook"><b class="metal money"><span class="c">₪</span>1,795,000</b><span>דירות 3 חד׳ החל מ־</span></div>
     </div>
-    <div class="kick">מודעות לקמפיין ממומן · פייסבוק ואינסטגרם</div>
-    <h1>White Key <span>אילת</span><br>סדרת מודעות לאישור</h1>
-    <p>פרויקט יוקרה של אלביט מגורים בלב רובע הטרמינל המתחדש — 10 דק׳ מהים. שלושה קונספטים של מודעה, כל אחד בפורמט פיד וסטורי, בהתאמה מלאה לשפה המותגית של פריים נדל״ן ולצד הטקסט לפרסום.</p>
-    <div class="stats">
-      <div class="stat"><b>3 חד׳ מ־1,795,000 ₪</b><span>מחיר פתיחה</span></div>
-      <div class="stat"><b>15,000 ₪</b><span>הכנסה חודשית ממוצעת</span></div>
-      <div class="stat"><b>179,500 ₪</b><span>בחוזה · מודל 10/90</span></div>
-      <div class="stat"><b>3 קונספטים</b><span>פיד + סטורי</span></div>
-    </div>
+    <a class="cta-lg" href="#form">לקבלת מצגת הפרויקט ‹</a>
   </div>
 </header>
 
-<main>
-  <section class="wrap">
-    <div class="shead"><h2>היתרונות המרכזיים</h2><p>העוגנים השיווקיים של הקמפיין</p></div>
+<div class="wrap lightbg">
     <div class="values">
-      <div class="val"><div class="n">10/90</div><div class="t">179,500 ₪ בחוזה</div><div class="d">היתרה לקראת אכלוס</div></div>
-      <div class="val"><div class="n">15,000 ₪</div><div class="t">הכנסה חודשית</div><div class="d">דרך חברת ניהול</div></div>
-      <div class="val"><div class="n">פטור מדד</div><div class="t">ללא הצמדה</div><div class="d">ודאות בתשלום</div></div>
-      <div class="val"><div class="n">10 דק׳</div><div class="t">מהים והטיילת</div><div class="d">רובע הטרמינל</div></div>
-    </div>
-  </section>
+    <div class="val"><div class="n">10/90</div><div class="t">179,500 ₪ בחוזה</div><div class="d">היתרה לקראת האכלוס</div></div>
+    <div class="val"><div class="n">15,000 ₪</div><div class="t">הכנסה חודשית</div><div class="d">דרך חברת ניהול מלאה</div></div>
+    <div class="val"><div class="n">פטור מדד</div><div class="t">ללא הצמדה</div><div class="d">ודאות בתשלום</div></div>
+    <div class="val"><div class="n">10 דק׳</div><div class="t">מהים והטיילת</div><div class="d">רובע הטרמינל</div></div>
+  </div>
+</div>
 
-  <section class="wrap">
-    <div class="shead"><h2>מודעות פיד</h2><p>1080×1080 · לפוסטים בפייסבוק ובאינסטגרם</p></div>
-    <div class="grid">
-      <div class="card"><div class="thumb" onclick="zoom('img/feed-income.jpg')"><img src="img/feed-income.jpg" alt="קונספט הכנסה"></div>
-        <div class="cap"><span class="tag">עוגן: הכנסה</span><h3>דירה שמייצרת הכנסה</h3><p>15,000 ₪ בחודש · קהל משקיעים</p></div></div>
-      <div class="card"><div class="thumb" onclick="zoom('img/feed-entry.jpg')"><img src="img/feed-entry.jpg" alt="קונספט כניסה נמוכה"></div>
-        <div class="cap"><span class="tag">עוגן: כניסה נמוכה</span><h3>179,500 ₪ בלבד</h3><p>מודל 10/90 · ההוק הכי חזק</p></div></div>
-      <div class="card"><div class="thumb" onclick="zoom('img/feed-lifestyle.jpg')"><img src="img/feed-lifestyle.jpg" alt="קונספט אורח חיים"></div>
-        <div class="cap"><span class="tag">עוגן: אורח חיים</span><h3>החיים החדשים באילת</h3><p>נוף ויוקרה · פנייה רגשית</p></div></div>
+<section class="wrap lightbg">
+    <div class="about">
+    <div class="txt">
+      <div class="eyebrow">על הפרויקט</div>
+      <h2>יוקרה אינטימית<br>במרחק נגיעה מהים</h2>
+      <p>White Key הוא מתחם מגורים חדש ומוקפד של אלביט מגורים, בלב פארק הטרמינל המתחדש באילת — מרחב עירוני ירוק עם טיילת מוצללת, שבילי אופניים ומוקדי מסחר ופנאי, במרחק פסיעה מהחופים.</p>
+      <ul>
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#1a1205" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>31 בנייני בוטיק — כניסה פרטית, מעלית, ועד 11 דירות בלבד בכל בניין</li>
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#1a1205" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>תמהיל דירות 3–5 חדרים, דירות גן, דופלקסים ופנטהאוזים — חלקן עם בריכה פרטית</li>
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#1a1205" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>קו אדריכלי ים-תיכוני לבן, חצרות פנימיות ירוקות וסטנדרט גימור גבוה</li>
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#1a1205" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>ליווי בנקאי ואיתנות פיננסית של אלביט מגורים</li>
+      </ul>
     </div>
-  </section>
+    <div class="pic"><img src="img/penthouse_dusk.jpg" alt="מרפסת פנטהאוז White Key אילת"></div>
+  </div>
+</section>
 
-  <section class="wrap stories">
-    <div class="shead"><h2>גרסאות סטורי</h2><p>1080×1920 · מסך מלא בסטוריז וברילס</p></div>
-    <div class="grid">
-      <div class="card"><div class="thumb" onclick="zoom('img/story-income.jpg')"><img src="img/story-income.jpg" alt="סטורי הכנסה"></div><div class="cap"><h3>הכנסה</h3></div></div>
-      <div class="card"><div class="thumb" onclick="zoom('img/story-entry.jpg')"><img src="img/story-entry.jpg" alt="סטורי כניסה נמוכה"></div><div class="cap"><h3>כניסה נמוכה</h3></div></div>
-      <div class="card"><div class="thumb" onclick="zoom('img/story-lifestyle.jpg')"><img src="img/story-lifestyle.jpg" alt="סטורי אורח חיים"></div><div class="cap"><h3>אורח חיים</h3></div></div>
+<section class="gallery">
+  <div class="wrap">
+    <div class="eyebrow">גלריית הדמיות</div>
+    <h2>הצצה לחיים ב־White Key</h2>
+    <div class="ggrid">
+      <div class="g tall" onclick="zoom('img/penthouse_seaview.jpg')"><img src="img/penthouse_seaview.jpg" alt="נוף גג לאילת"></div>
+      <div class="g" onclick="zoom('img/aerial_bay.jpg')"><img src="img/aerial_bay.jpg" alt="הפרויקט מול מפרץ אילת"></div>
+      <div class="g" onclick="zoom('img/courtyard_pools.jpg')"><img src="img/courtyard_pools.jpg" alt="חצרות ובריכות פרטיות"></div>
+      <div class="g" onclick="zoom('img/penthouse_plunge.jpg')"><img src="img/penthouse_plunge.jpg" alt="מרפסת עם נוף להרי אילת"></div>
+      <div class="g" onclick="zoom('img/aerial_quarter.jpg')"><img src="img/aerial_quarter.jpg" alt="רובע הטרמינל מהאוויר"></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="wrap">
-    <div class="shead"><h2>טקסט לפרסום</h2><p>מוכן להעתקה ולהעלאה למודעה הממומנת</p></div>
-    <div class="copywrap">
-      <div class="copyblock">
-        <div class="lbl">כותרת</div>
-        <h3>White Key אילת — דירת 3 חדרים שמייצרת לכם הכנסה של כ־15,000 ₪ בחודש</h3>
+<section class="lead-sec" id="form">
+  <div class="wrap lead-wrap">
+    <div class="info">
+      <div class="eyebrow" style="color:var(--gold2)">השאירו פרטים</div>
+      <h2>מתחילים את הסיפור<br>שלכם באילת</h2>
+      <p class="p">השאירו פרטים ונחזור אליכם עם מצגת הפרויקט, תמהיל הדירות והמחירים — ותיאום שיחה אישית עם נציג פריים נדל״ן.</p>
+      <div class="mini"><span>✓ ייעוץ אישי ללא התחייבות</span><span>✓ מצגת פרויקט מלאה</span><span>✓ תמהיל ומחירים מעודכנים</span></div>
+    </div>
+    <form class="form" id="leadform" onsubmit="return submitLead(event)">
+      <div class="fields">
+        <h3>נשמח להכיר</h3>
+        <div class="sub">נחזור אליכם בהקדם</div>
+        <label for="nm">שם מלא</label>
+        <input id="nm" name="name" required placeholder="השם שלכם">
+        <label for="ph">טלפון</label>
+        <input id="ph" name="phone" required inputmode="tel" placeholder="050-0000000">
+        <label for="em">דוא״ל</label>
+        <input id="em" name="email" type="email" placeholder="name@email.com">
+        <label class="consent"><input type="checkbox" required><span>אני מאשר/ת קבלת מידע שיווקי ויצירת קשר מפריים נדל״ן בהתאם לתנאי השימוש ומדיניות הפרטיות.</span></label>
+        <button type="submit">שליחה וקבלת מצגת ‹</button>
       </div>
-      <div class="copyblock">
-        <div class="lbl">גוף המודעה</div>
-        <div class="txt" id="adbody">🔑 White Key — פרויקט היוקרה החדש של אלביט מגורים בלב רובע הטרמינל המתחדש באילת, במרחק 10 דקות מהים, מהטיילת ומאזור המלונות.
-
-דירה שמשלבת איכות חיים עם הכנסה:
-🏙️ דירות 3 חדרים החל מ־1,795,000 ₪
-💰 הכנסה חודשית ממוצעת של כ־15,000 ₪ דרך חברת ניהול מלאה
-🤝 מודל 10/90 — רק 179,500 ₪ בחתימת החוזה, היתרה לקראת האכלוס
-📊 פטור ממדד — ודאות מלאה בתשלום
-🏗️ 31 בנייני בוטיק · כניסה פרטית ומעלית · עד 11 דירות בבניין
-🌿 תכנון ים-תיכוני לבן · חצרות ירוקות · דירות עם בריכה פרטית
-
-העיר שלא מפסיקה לצמוח, במיקום שלא יחזור על עצמו.
-
-📩 השאירו פרטים לקבלת מצגת הפרויקט, תמהיל הדירות ותיאום שיחה אישית.</div>
-      </div>
-      <button class="copybtn" id="cbtn" onclick="copyTxt()"><span>📋</span><span id="cbtnt">העתק את הטקסט</span></button>
-    </div>
-  </section>
-</main>
+      <div class="ok" id="ok"><div class="big">תודה רבה! 🔑</div><p>הפרטים התקבלו — נחזור אליכם בהקדם עם כל המידע על White Key אילת.</p></div>
+    </form>
+  </div>
+</section>
 
 <footer>
   <div class="bb">פריים נדל״ן · נדל״ן בגובה העיניים</div>
-  <div>White Key אילת · אלביט מגורים · רובע הטרמינל</div>
-  <div class="disc">ההדמיה להמחשה בלבד | ט.ל.ח</div>
+  <div class="row">White Key אילת · אלביט מגורים · רובע הטרמינל המתחדש</div>
+  <div class="row">בשיווק בלעדי: פריים נדל״ן</div>
+  <div class="disc">כל ההדמיות להמחשה בלבד | ט.ל.ח · המידע אינו מהווה הצעה או התחייבות ואינו תחליף לייעוץ מקצועי</div>
 </footer>
 
-<div class="lb" id="lb" onclick="closeLb(event)"><span class="x" onclick="closeLb(event)">✕</span><img id="lbimg" src="" alt=""></div>
+<div class="lb" id="lb" onclick="closeLb()"><span class="x" onclick="closeLb()">✕</span><img id="lbimg" src="" alt=""></div>
 
 <script>
-function zoom(src){var lb=document.getElementById('lb');document.getElementById('lbimg').src=src;lb.classList.add('on');}
-function closeLb(e){document.getElementById('lb').classList.remove('on');}
-document.addEventListener('keydown',function(e){if(e.key==='Escape')document.getElementById('lb').classList.remove('on');});
-function copyTxt(){
-  var title='White Key אילת — דירת 3 חדרים שמייצרת לכם הכנסה של כ־15,000 ₪ בחודש\n\n';
-  var body=document.getElementById('adbody').innerText;
-  var btn=document.getElementById('cbtn'),t=document.getElementById('cbtnt');
-  function ok(){btn.classList.add('done');t.textContent='הטקסט הועתק ✓';setTimeout(function(){btn.classList.remove('done');t.textContent='העתק את הטקסט';},2200);}
-  try{navigator.clipboard.writeText(title+body).then(ok,function(){fallback(title+body,ok);});}
-  catch(err){fallback(title+body,ok);}
-}
-function fallback(text,ok){
-  try{var ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);ok();}catch(e){}
+function zoom(s){document.getElementById('lbimg').src=s;document.getElementById('lb').classList.add('on');}
+function closeLb(){document.getElementById('lb').classList.remove('on');}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLb();});
+function submitLead(e){
+  e.preventDefault();
+  var f=document.getElementById('leadform');
+  // TODO: wire to Leadly / CRM endpoint. For now shows confirmation locally.
+  f.classList.add('sent');
+  document.getElementById('ok').classList.add('on');
+  return false;
 }
 </script>
 </body>
